@@ -83,8 +83,7 @@ class XBox360ThumbStick
 	{
 		return _deadZone = value*STICK_MAX_MAG;
 	}
-	
-	public var deadZone(get_deadZone, set_deadZone):Float;
-	public var deadZoneNorm(get_deadZoneNorm, set_deadZoneNorm):Float;
+		public var deadZone(get, set):Float;
+	public var deadZoneNorm(get, set):Float;
 	
 }

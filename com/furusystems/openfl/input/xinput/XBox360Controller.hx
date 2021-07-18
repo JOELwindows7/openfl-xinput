@@ -168,7 +168,7 @@ class XBox360Controller
 		return _id;
 	}
 	
-	public var id(get_id, null):Int;
+	public var id(get, never):Int;
 	
 	function get_vibrationLeft():Int 
 	{
@@ -194,8 +194,8 @@ class XBox360Controller
 		return _vibrationRight;
 	}
 	
-	public var vibrationLeft(get_vibrationLeft, set_vibrationLeft):Int;
-	public var vibrationLeftNorm(get_vibrationLeftNorm, set_vibrationLeftNorm):Float;
+	public var vibrationLeft(get, set):Int;
+	public var vibrationLeftNorm(get, set):Float;
 	
 	function get_vibrationRight():Int 
 	{
@@ -221,8 +221,8 @@ class XBox360Controller
 		return _vibrationRight;
 	}
 	
-	public var vibrationRight(get_vibrationRight, set_vibrationRight):Int;
-	public var vibrationRightNorm(get_vibrationRightNorm, set_vibrationRightNorm):Float;
+	public var vibrationRight(get, set):Int;
+	public var vibrationRightNorm(get, set):Float;
 	
 	static var xinput_vibrate = Lib.load("xinput", "vibrate", 3);
 	static var xinput_poll = Lib.load("xinput", "poll", 1);
